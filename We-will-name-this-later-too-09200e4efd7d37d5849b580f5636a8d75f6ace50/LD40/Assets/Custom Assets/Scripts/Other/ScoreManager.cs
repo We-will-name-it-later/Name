@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour {
 
@@ -39,6 +40,10 @@ public class ScoreManager : MonoBehaviour {
 	{
 		score += bagWorth;
 		scoreValue.SetText("$ " + score.ToString() + "k");
+		if (score == 1200)
+		{
+			SceneManager.LoadScene(0);
+		}
 		if ((Guards.Length - 1) > numberOfGuardsActive)
 		{
 			ActivateNewGuard(numberOfGuardsActive + 1);

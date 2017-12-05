@@ -1138,6 +1138,7 @@ MonoBehaviour:
   - {fileID: 1214144628}
   - {fileID: 1506090477}
   - {fileID: 693088998}
+  score: 1100
 --- !u!1 &95134317
 GameObject:
   m_ObjectHideFlags: 0
